@@ -1,0 +1,29 @@
+{
+  "description": "The lesspass webextension already builded with my lesspass options (lefuturiste)",
+  "manifest_version": 2,
+  "name": "lesspass",
+  "version": "1.0.0",
+  "homepage_url": "https://gitlab.com/lefuturiste/lesspass-webextension",
+  "icons": {
+    "64": "icons/logo-64.png"
+  },
+  "web_accessible_resources": [
+    "dist/*"
+  ],
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+  "browser_action": {
+    "browser_style": false,
+    "default_icon": "icons/logo-32.png",
+    "default_title": "Lesspass",
+    "default_popup": "index.html"
+  },
+  "applications": {
+    "gecko": {
+      "id": "lesspass.webextension@lefuturiste.fr",
+      "strict_min_version": "48.0"
+    }
+  }
+}
